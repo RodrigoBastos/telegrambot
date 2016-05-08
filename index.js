@@ -20,8 +20,10 @@ bot.onText(/\/echo (.+)/, function (msg, match) {
 bot.on('message', function (msg) {
 
 	var chatId = msg.chat.id;
+	var text = 'Boa noite!';
 	// photo can be: a file path, a stream or a Telegram file_id
 	var photo = 'pug.jpg';
-	bot.sendPhoto(chatId, photo, {caption: 'Lovely kittens'});
+	//bot.sendPhoto(chatId, photo, {caption: 'Lovely kittens'});
+	bot.sendMessage(chatId, text,  []);
 });
 

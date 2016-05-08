@@ -4,6 +4,7 @@
   "description": "Create new bot by Telegram API",
   "main": "index.js",
   "dependencies": {
+    "node-telegram-bot-api": "^0.21.1",
     "telegram-node-bot": "^2.1.2"
   },
   "devDependencies": {},

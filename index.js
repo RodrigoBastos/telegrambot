@@ -3,27 +3,27 @@
  */
 'use strict';
 
-var TelegramBot = require('node-telegram-bot-api');
+var TelegramBot 			= require('node-telegram-bot-api');
+var AIMLInterpreter 	=	require('aimlinterpreter');
 
+//BOT CONFIG
 var token = process.env.TELEGRAM_TOKEN;
-// Setup polling way
-var bot = new TelegramBot(token, {polling: true});
+var edbot = new TelegramBot(token, {polling: true});
 
-// Matches /echo [whatever]
-bot.onText(/\/echo (.+)/, function (msg, match) {
-	var fromId = msg.from.id;
-	var resp = match[1];
-	bot.sendMessage(fromId, resp);
-});
+//LOADING AIML
+var aimlInterpreter = new AIMLInterpreter({name:'Edbot', age:'20'});
+aimlInterpreter.loadAIMLFilesIntoArray(['./test.aiml']);
+
 
 // Any kind of message
-bot.on('message', function (msg) {
-
+edbot.on('message', function (msg) {
 	var chatId = msg.chat.id;
-	var text = 'Boa noite!';
-	// photo can be: a file path, a stream or a Telegram file_id
-	var photo = 'pug.jpg';
-	//bot.sendPhoto(chatId, photo, {caption: 'Lovely kittens'});
-	bot.sendMessage(chatId, text,  []);
-});
 
+	aimlInterpreter.findAnswerInLoadedAIMLFiles(msg.text, callback);
+
+	function callback (answer) {
+		console.log('MENSAGEM:', msg);
+		edbot.sendMessage(chatId, answer, []);
+	}
+
+});

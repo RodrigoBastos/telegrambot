@@ -12,7 +12,7 @@ var edbot = new TelegramBot(token, {polling: true});
 
 //LOADING AIML
 var aimlInterpreter = new AIMLInterpreter({name:'Edbot', age:'20'});
-aimlInterpreter.loadAIMLFilesIntoArray(['./test.aiml']);
+aimlInterpreter.loadAIMLFilesIntoArray(['./sample.aiml']);
 
 
 // Any kind of message

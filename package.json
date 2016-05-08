@@ -1,0 +1,26 @@
+{
+  "name": "telegrambot",
+  "version": "0.0.1",
+  "description": "Create new bot by Telegram API",
+  "main": "index.js",
+  "dependencies": {
+    "telegram-node-bot": "^2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RodrigoBastos/telegrambot.git"
+  },
+  "keywords": [
+    "Bot",
+    "Telegram"
+  ],
+  "author": "Rodrigo Bastos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoBastos/telegrambot/issues"
+  }
+}

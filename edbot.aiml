@@ -1,23 +1,13 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<aiml>
+<aiml version="0.0.1" encoding="UTF-8">
     <category>
-        <pattern>HELLO</pattern>
+        <pattern>OLÃ</pattern>
         <template>
             <random>
-                <li><srai>Oi, olá!</srai></li>
-                <li><srai>E aí</srai></li>
-            </random>
-        </template>
-    </category>
-    <category>
-        <pattern>OLÁ</pattern>
-        <template>
-            <random>
-                <li>Oi, olá!</li>
-                <li>E aí</li>
+                <li>Oi, olÃ¡!</li>
+                <li>E aÃ­</li>
                 <li>Opa!</li>
-                <li>Olá</li>
-                <li>olá, tudo bem?</li>
+                <li>OlÃ¡</li>
+                <li>olÃ¡, tudo bem?</li>
             </random>
         </template>
     </category>
@@ -28,7 +18,7 @@
             <random>
                 <li>Oi, tudo bem?</li>
                 <li>Oi</li>
-                <li>olá</li>
+                <li>olÃ¡</li>
             </random>
         </template>
     </category>
@@ -37,15 +27,15 @@
         <pattern>TUDO BEM</pattern>
         <template>
             <random>
-                <li>Tranquilo, e você?</li>
+                <li>Tranquilo, e vocÃª?</li>
                 <li>Tudo.</li>
-                <li>tudo bem e você?</li>
+                <li>tudo bem e vocÃª?</li>
             </random>
         </template>
     </category>
 
     <category>
-        <pattern>QUEM É VOCÊ</pattern>
+        <pattern>QUEM Ã‰ VOCÃŠ</pattern>
         <template>
             <random>
                 <li>Eu sou um Bot</li>
@@ -59,14 +49,14 @@
     </category>
 
     <category>
-        <pattern>O QUE É * BOT</pattern>
+        <pattern>O QUE Ã‰ * BOT</pattern>
         <template>
-            Bot é um Robô que utiliza Inteligência Artificial para realizar atividades humanas
+            Bot Ã© um RobÃ´ que utiliza InteligÃªncia Artificial para realizar atividades humanas
         </template>
     </category>
 
     <category>
-        <pattern>QUAL A SUA PROFISSÃO</pattern>
+        <pattern>QUAL A SUA PROFISSÃƒO</pattern>
         <template>
             Eu sou um assistente educacional
         </template>
@@ -76,7 +66,7 @@
         <pattern>* SEU NOME</pattern>
         <template>
             <random>
-                <li>Meu nome é Ed</li>
+                <li>Meu nome Ã© Ed</li>
                 <li>Ed</li>
             </random>
         </template>

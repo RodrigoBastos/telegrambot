@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml>
     <category>
         <pattern>WHAT IS YOUR NAME</pattern>
@@ -21,13 +21,8 @@
         <template><random><li>A</li><li>B</li><li>C</li></random></template>
     </category>
     <category>
-        <pattern>OLA</pattern>
-        <template>
-            <random>
-                <li>Oi, tudo bem?</li>
-                <li>Oi, qual o seu nome?</li>
-            </random>
-        </template>
+        <pattern>OLÁ</pattern>
+        <template>Olá, tudo bem com você?</template>
     </category>
     <category>
         <pattern>TEST SRAI IN RANDOM</pattern>
@@ -37,7 +32,7 @@
                 <li><srai>WHAT IS MY NAME</srai></li>
             </random>
         </template>
-    </category>OLA
+    </category>
     <category>
         <pattern>TEST WILDCARD *</pattern>
         <template>Thanks for testing!</template>

@@ -21,6 +21,15 @@
         <template><random><li>A</li><li>B</li><li>C</li></random></template>
     </category>
     <category>
+        <pattern>OLA</pattern>
+        <template>
+            <random>
+                <li>Oi, tudo bem?</li>
+                <li>Oi, qual o seu nome?</li>
+            </random>
+        </template>
+    </category>
+    <category>
         <pattern>TEST SRAI IN RANDOM</pattern>
         <template>
             <random>
@@ -28,7 +37,7 @@
                 <li><srai>WHAT IS MY NAME</srai></li>
             </random>
         </template>
-    </category>
+    </category>OLA
     <category>
         <pattern>TEST WILDCARD *</pattern>
         <template>Thanks for testing!</template>
